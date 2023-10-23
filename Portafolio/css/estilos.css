@@ -1,0 +1,423 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* ---- HEADER ----*/
+
+header{
+    background: #1765ad;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 450px;
+    max-height: 450px;
+    
+}
+
+header .menu{
+    margin: 40px 0;
+    text-align: right;
+}
+
+header .menu a{
+    margin: 0 20px ;
+    color: #fff;
+    padding-bottom: 9px;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    font-size: 1em;
+}
+
+header .menu a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+header .contenedor_texto{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 40px 0;
+
+}
+
+header .contenedor_texto .texto{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5) ;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 60px;
+}
+
+header .contenedor_texto .texto h1,
+header .contenedor_texto .texto h2{
+    color: #fff;
+    font-weight: 300;
+    margin: 0;
+
+}
+
+header .contenedor_texto .texto .nombre{
+    margin-bottom: 30px;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+header .contenedor_texto .texto .profesion{
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+/* ---- MAIN ACERCA DE ----*/
+
+.main .contenedor{
+    overflow: visible;
+}
+
+.main .acerca_de {
+    text-align: center;
+}
+
+.main .acerca_de .foto {
+    margin-top: -100px;
+}
+
+.main .acerca_de .foto img {
+    vertical-align: top;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+.main .acerca_de .texto{
+    color: #5a5a5a;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.main .acerca_de .titulo {
+    font-size: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #112a45;
+    text-align: center;
+}
+
+.main .acerca_de .texto .bold {
+    font-weight: 700;
+    color: #000000;
+    
+}
+
+/* ---- MAIN CURSOS ----*/
+
+.main .cursos{
+    background: #f2f2f2;
+    padding: 60px 0;
+}
+
+.main .cursos .contenedor{
+    overflow: hidden;
+}
+
+.main .cursos .titulo {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    color: #112a45;
+    text-align: center;
+}
+
+.main .contenedor_cursos { 
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    height: 50%;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory; 
+    scroll-behavior: smooth;
+    border-radius: 5px;
+}
+
+.main .contenedor_cursos .item {
+    flex: 1 0 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+    transition: all 0.3s ease;
+    
+ }
+
+ 
+ .main .contenedor_cursos .item img{
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+    
+    
+ }
+
+ .main .contenedor_cursos input{
+    display: none;
+ }
+
+ .main .dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+ }
+
+ .main .dots label{
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    border: solid #111d2c 2px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 10px;
+ }
+ .main .dots label:hover {
+    background: #111d2c;
+ }
+
+ #img1:checked ~ #item-1{
+    margin-left: 0;
+    
+ }
+
+ #img2:checked ~ #item-2{
+    margin-left: -100%;
+ }
+
+ #img3:checked ~ #item-3{
+    margin-left: -200%;
+ }
+
+ #img4:checked ~ #item-4{
+    margin-left: -300%;
+ }
+
+ #img5:checked ~ #item-4{
+    margin-left: -400%;
+ }
+ 
+/* ---- MAIN HABILIDADES ----*/
+
+.main .habilidades{
+    background: #fff;
+    padding: 60px 0;
+}
+
+.main .habilidades .contenedor{
+    overflow: hidden;
+}
+
+.main .habilidades .titulo {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    color: #112a45;
+    text-align: center;
+}
+
+.main .habilidades .contenedor_habilidades {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+}
+
+.main .habilidades .contenedor_habilidades .trabajo {
+    width: 22%;
+    margin-bottom:  40px; ;
+}
+
+.main .habilidades .contenedor_habilidades .trabajo .thumb {
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+.main .habilidades .contenedor_habilidades .trabajo .thumb img {
+    width: 100%;
+    vertical-align: top;
+    border-radius: 10px;
+
+}
+
+.main .habilidades .contenedor_habilidades .trabajo .descripcion{
+    text-align: center;
+}
+.main .habilidades .contenedor_habilidades .trabajo .nombre{
+    font-weight: 700;
+    color: #3895ea;
+}
+
+.main .habilidades .contenedor_habilidades .trabajo .categoria{
+    font-size: 14px;
+    color: #636363;
+}
+
+
+/* ---- FOOTER FORMULARIO ----*/
+
+footer .contacto {
+    background: #f2f2f2;
+    padding: 60px 0;
+    
+
+}
+
+footer .contacto .titulo {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    color: #112a45;
+    text-align: center;
+
+}
+
+footer .contacto .formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"],
+footer .contacto .formulario textarea {
+    border: 2px solid #cecece;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #a4a4a4;
+
+}
+
+footer .contacto .formulario input[type="text"]:focus,
+footer .contacto .formulario input[type="email"]:focus,
+footer .contacto .formulario textarea:focus {
+    border: 2px solid #3895ea;
+}
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+
+}
+
+footer .contacto .formulario textarea {
+    width: 100%;
+    height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 200px;
+    max-height: 300px ;
+    margin-bottom: 15px;
+}
+
+footer .contacto .formulario .boton{
+    margin: auto;
+    background: #177ddc;
+    color: #fff;
+    border: none;
+    border-radius: 3px ;
+    padding: 15px 40px;
+    cursor: pointer;
+
+}
+
+footer .contacto .formulario .boton:hover {
+    background: #1765ad;
+}
+
+/* ---- FOOTER REDES ----*/
+
+footer .redes {
+    background: #111d2c;
+    padding: 60px 0;
+}
+
+footer .redes .contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes a{
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    border-radius: 3px;
+    font-size: 30px;
+    margin: 0 20px;
+}
+
+footer .redes .twitter:hover {background: #1da1f2;}    
+footer .redes .facebook:hover {background: #3b5998;}    
+footer .redes .linkedin:hover {background: #1da1f2;}    
+footer .redes .instagram:hover {background: #3f729b;}    
+footer .redes .github:hover {background: #666666;}    
+
+/* ---- MEDIA QUERIES ----*/ 
+
+@media screen and (max-width: 800px) {
+    header .menu {
+        text-align: center;
+    }
+    
+    .main .habilidades .contenedor_habilidades .trabajo{
+        width: 47%;
+        
+    }
+    .main .contenedor_cursos { 
+        
+        width: 100%;
+       
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header .contenedor_texto .texto .nombre{
+        font-size: 35px;
+    }
+    header .contenedor_texto .texto .profesion{
+        font-size: 18px;
+    }
+    .main .dots label{
+        height: 0.8em;
+        width: 0.8em;
+        
+     }
+    footer .redes .contenedor {
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+   
+}
